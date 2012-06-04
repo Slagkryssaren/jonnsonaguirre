@@ -83,6 +83,7 @@ INSTALLED_APPS = (
     'publisher',
     
     'jonnsonaguirre.works',
+    'cmsplugin_youtube',
 )
 
 MIDDLEWARE_CLASSES = (
