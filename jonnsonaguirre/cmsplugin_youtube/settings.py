@@ -6,26 +6,20 @@ contain the appropriate settings.
 from django.conf import settings
 
 # Autoplay
-CMS_YOUTUBE_DEFAULT_AUTOPLAY = getattr(settings,
-                                       'CMS_YOUTUBE_DEFAULT_AUTOPLAY', False)
+CMS_YOUTUBE_DEFAULT_AUTOPLAY = getattr(settings, 'CMS_YOUTUBE_DEFAULT_AUTOPLAY', False)
 
 # Width & Height
-CMS_YOUTUBE_DEFAULT_WIDTH = getattr(settings, 'CMS_YOUTUBE_DEFAULT_WIDTH', 425)
-CMS_YOUTUBE_DEFAULT_HEIGHT = getattr(settings, 'CMS_YOUTUBE_DEFAULT_HEIGHT', 
-                                     344)
+CMS_YOUTUBE_DEFAULT_WIDTH = getattr(settings, 'CMS_YOUTUBE_DEFAULT_WIDTH', 640)
+CMS_YOUTUBE_DEFAULT_HEIGHT = getattr(settings, 'CMS_YOUTUBE_DEFAULT_HEIGHT', 480)
 
 # Border
-CMS_YOUTUBE_DEFAULT_BORDER = getattr(settings, 'CMS_YOUTUBE_DEFAULT_BORDER',
-                                     False)
+CMS_YOUTUBE_DEFAULT_BORDER = getattr(settings, 'CMS_YOUTUBE_DEFAULT_BORDER', False)
 
 # Full Screen
-CMS_YOUTUBE_DEFAULT_FULLSCREEN = getattr(settings,
-                                         'CMS_YOUTUBE_DEFAULT_FULLSCREEN',
-                                         True)
+CMS_YOUTUBE_DEFAULT_FULLSCREEN = getattr(settings, 'CMS_YOUTUBE_DEFAULT_FULLSCREEN', True)
 
 # Loop
 CMS_YOUTUBE_DEFAULT_LOOP = getattr(settings, 'CMS_YOUTUBE_DEFAULT_LOOP', False)
 
 # Display Related Videos
-CMS_YOUTUBE_DEFAULT_RELATED = getattr(settings, 'CMS_YOUTUBE_DEFAULT_RELATED',
-                                      False)
+CMS_YOUTUBE_DEFAULT_RELATED = getattr(settings, 'CMS_YOUTUBE_DEFAULT_RELATED', False)
