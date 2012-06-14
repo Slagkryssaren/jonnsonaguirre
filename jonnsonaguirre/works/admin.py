@@ -17,7 +17,7 @@ class YoutubeVideoInline(admin.TabularInline):
 class WorkAdmin(admin.ModelAdmin):
     list_display = ('name','date',)
     ordering = ('name',)
-    inlines = (YoutubeVideoInline, MediaFileInline,)
+    inlines = (MediaFileInline,YoutubeVideoInline,)
     prepopulated_fields = {
         'slug': ('name',)
     }
