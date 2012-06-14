@@ -9,6 +9,13 @@
     
     {% if work.text %}{{ work.text|safe }}{% endif %}
     
+    {% for video in work.youtubevideo_set.all %}
+        <div class="work-mediafile">
+            <iframe type="text/html" width="640" height="480" src="http://www.youtube.com/embed/{{ video.video_id }}?origin=http://www.jonnsonaguirre.com/" frameborder="0"/>
+
+        </div>
+    {% endfor %}
+    
     {% for file in work.mediafile_set.all %}
         <div class="work-mediafile">
             <img src="{% thumbnail file.file 640x960 upscale detail %}" alt="{{ file.name }}" />

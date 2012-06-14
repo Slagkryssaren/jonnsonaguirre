@@ -40,6 +40,18 @@ class MediaFile(models.Model):
     def __unicode__(self):
         return u"%s" % self.name
 
+class YoutubeVideo(models.Model):
+    work = models.ForeignKey(Work, verbose_name=_("work"))
+    video_id = models.CharField(verbose_name=_("video id"), max_length=20, blank=True)
+    order = models.PositiveSmallIntegerField(verbose_name=_("order"), default=0)
+    
+    class Meta:
+        verbose_name=_("youtube video")
+        verbose_name_plural=_("youtube videos")
+        ordering = ('order',)
+        
+    def __unicode__(self):
+        return u"%s %s" % (YoutubeVideo._meta.verbose_name.title(), self.video_id)
 
 
 class WorkPlugin(CMSPlugin):
